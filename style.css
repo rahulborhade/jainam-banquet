@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* *:not(i) {
+    font-family: "Poppins", sans-serif;
+} */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: max-content;
+    background-color: #000000;
+    padding: 1.8rem 5rem;
+    isolation: isolate;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    width: 70%;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+nav a#logo {
+    color: #D2B461;
+    width: 30%;
+}
+
+nav ul a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+nav ul a:hover {
+    color: #D2B461;
+    border-bottom: 2px solid #D2B461;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+#ham-menu {
+    display: none;
+}
+
+nav ul.active {
+    left: 0;
+}
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    header {
+        padding: 2.2rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 50%;
+    }
+
+    #ham-menu {
+        display: block;
+        color: #ffffff;
+    }
+
+    nav a#logo,
+    #ham-menu {
+        font-size: 3.2rem;
+    }
+
+    nav ul {
+        background-color: black;
+        position: fixed;
+        left: -100vw;
+        top: 73.6px;
+        width: 100vw;
+        height: calc(100vh - 73.6px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 1s;
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    html {
+        font-size: 46.87%;
+    }
+
+    header {
+        padding: 2rem 3rem;
+    }
+
+    nav ul {
+        top: 65.18px;
+        height: calc(100vh - 65.18px);
+    }
+}
+
+/* *******CAROUSEL******* */
+
+.section {
+    height: auto;
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-color: #cfbaba4d;
+    top: 9.5rem;
+    /* opacity: 1; */
+    z-index: -1;
+}
+
+.section2 {
+    background-image: url(./imgs/flowers.png);
+    background-position: top center;
+    background-repeat: repeat-x;
+}
+
+.section::before {
+    background-image: url('./imgs/main.png');
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+
+.cardoosec {
+    padding: 2rem 2rem;
+}
+
+h1 {
+    color: #000;
+    isolation: isolate;
+    font-family: "RocknRoll One", Sans-serif;
+    font-size: 31px;
+    font-weight: 300;
+    line-height: 45px;
+    letter-spacing: -1.3px;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.contain {
+    display: flex;
+    flex-wrap: nowrap;
+    isolation: isolate;
+    justify-content: space-between;
+    margin: 0rem 12rem;
+}
+
+.contain img {
+    width: 100%;
+    height: auto;
+}
+
+.contain h3 {
+    color: #060606;
+    font-family: "Rochester", Sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem 6rem;
+}
+
+.contain p {
+    margin: 0rem 6rem;
+    isolation: isolate;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    /* line-height: 20px; */
+    letter-spacing: 1.1px;
+}
+
+p {
+
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    /* line-height: 20px; */
+    letter-spacing: 1.1px;
+}
+
+.contain2 {
+    margin: 2rem 10rem;
+    isolation: isolate;
+}
+
+.btno {
+    /* -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 3px 3px 3px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 18px;
+    background: #D2B461;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center; */
+    font-family: "Raleway", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    fill: #000000;
+    color: #000000;
+    background-color: #D2B461;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #D2B461;
+    border-radius: 42px 42px 42px 42px;
+    padding: 8px 20px 8px 20px;
+}
+
+.btno:hover {
+    background: #ffffff;
+    text-decoration: none;
+
+}
+
+.Categories h6 {
+    font-size: 15px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: 800;
+}
+.Categories h2 {
+    font-size: 55px;
+    font-family: 'Rochester', cursive;
+    font-weight: 800;
+}
+.Categories span{
+    color: #D2B461;
+}
