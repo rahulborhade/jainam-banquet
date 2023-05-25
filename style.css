@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 /* *:not(i) {
@@ -108,6 +109,14 @@ nav ul.active {
         transition: 1s;
         gap: 0;
     }
+    .details-sections{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        padding: 2rem 5rem;
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 575px) {
@@ -119,11 +128,25 @@ nav ul.active {
         padding: 2rem 3rem;
     }
 
+    header nav a img {
+        width: 200px;
+    }
+
     nav ul {
         top: 65.18px;
         height: calc(100vh - 65.18px);
     }
+    /* .details-sec {
+        flex-direction: column;
+    }
+    .details-sec1 {
+        width: 100%;
+    }
+    .details-sec2 {
+        width: 100%;
+    } */
 }
+
 
 /* *******CAROUSEL******* */
 
@@ -178,11 +201,6 @@ h1 {
     margin: 0rem 12rem;
 }
 
-.contain img {
-    width: 100%;
-    height: auto;
-}
-
 .contain h3 {
     color: #060606;
     font-family: "Rochester", Sans-serif;
@@ -203,7 +221,6 @@ h1 {
 }
 
 p {
-
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
     font-weight: 550;
@@ -217,20 +234,6 @@ p {
 }
 
 .btno {
-    /* -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    text-shadow: 3px 3px 3px #666666;
-    font-family: Georgia;
-    color: #ffffff;
-    font-size: 18px;
-    background: #D2B461;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    border: none;
-    text-align: center;
-    display: flex;
-    justify-content: center; */
     font-family: "Raleway", Sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -255,11 +258,199 @@ p {
     font-family: 'RocknRoll One', sans-serif;
     font-weight: 800;
 }
+
+.redishh h4 {
+    color: #060606;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    /* margin: 1rem 6rem; */
+}
+
 .Categories h2 {
     font-size: 55px;
     font-family: 'Rochester', cursive;
     font-weight: 800;
 }
-.Categories span{
+
+.Categories span {
     color: #D2B461;
+}
+
+@media only screen and (max-width: 767px) {
+    .contain {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        isolation: isolate;
+        justify-content: space-between;
+        margin: 0rem 0.5rem;
+    }
+
+    .contain img {
+        margin: auto;
+    }
+
+    .contain h3 {
+        color: #060606;
+        font-family: "Rochester", Sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        margin: 1rem 1rem;
+    }
+
+    .contain p {
+        margin: 1.5rem 2rem;
+        isolation: isolate;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 550;
+        /* line-height: 20px; */
+        letter-spacing: 1.1px;
+    }
+
+    p {
+        margin: 1.5rem 1rem;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 550;
+        /* line-height: 20px; */
+        letter-spacing: 1.1px;
+    }
+
+    .contain2 {
+        margin: 2rem 1rem;
+        /* isolation: isolate; */
+    }
+}
+
+.details-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    /* width: 100%; */
+}
+
+.details-sections{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    width: 100%;
+}
+
+.details-secs {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* padding: 2rem 5rem; */
+    width: 100%;
+}
+
+.linkss {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+/* unvisited link */
+.linkss:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* visited link */
+.linkss:visited {
+    color: #D2B461;
+}
+
+/* mouse over link */
+.linkss:hover {
+    color: #D2B461;
+}
+
+/* selected link */
+.linkss:active {
+    color: #D2B461;
+}
+
+
+/* About Page */
+.aboutp {
+    margin: 12.5rem 9rem;
+    margin-bottom: 5rem;
+}
+
+
+.details-sec1 {
+    width: 70%;
+}
+
+.details-sec h2 {
+    font-size: 45px;
+    font-family: 'Rochester', cursive;
+    font-weight: 800;
+}
+
+.details-sec p {
+    padding-top: 1rem;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    /* line-height: 20px; */
+    letter-spacing: 1.1px;
+}
+
+.details-sec2 {
+    width: 30%;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin: auto;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 15px;
+    font-size: 23px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #D2B461;
+    color: white;
+}
+
+.fa-instagram {
+    background: #D2B461;
+    color: white;
+}
+
+.fa-whatsapp {
+    background: #D2B461;
+    color: white;
+}
+
+/* Footer */
+.footer-sec {
+    /* margin-top: 9.5rem; */
+    background-color: #000;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.8rem;
+}
+
+.footer-sec span {
+    color: #fff;
 }
