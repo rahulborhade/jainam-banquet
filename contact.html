@@ -20,40 +20,223 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="contact.css" />
+
+
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            height: max-content;
+            background-color: #000000;
+            padding: 1.8rem 5rem;
+            isolation: isolate;
+            z-index: 5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            width: 70%;
+            justify-content: center;
+        }
+
+        nav a {
+            font-size: 1.8rem;
+            text-decoration: none;
+        }
+
+        nav a#logo {
+            color: #D2B461;
+            width: 30%;
+        }
+
+        nav ul a {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        nav ul a:hover {
+            color: #D2B461;
+            border-bottom: 2px solid #D2B461;
+        }
+
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        #ham-menu {
+            display: none;
+        }
+
+        nav ul.active {
+            left: 0;
+        }
+
+        @media only screen and (max-width: 991px) {
+            html {
+                font-size: 56.25%;
+            }
+
+            header {
+                padding: 2.2rem 5rem;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            html {
+                font-size: 50%;
+            }
+
+            #ham-menu {
+                display: block;
+                color: #ffffff;
+            }
+
+            nav a#logo,
+            #ham-menu {
+                font-size: 3.2rem;
+            }
+
+            nav ul {
+                background-color: black;
+                position: fixed;
+                left: -100vw;
+                top: 73.6px;
+                width: 100vw;
+                height: calc(100vh - 73.6px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                transition: 1s;
+                gap: 0;
+            }
+        }
+
+        @media only screen and (max-width: 575px) {
+            html {
+                font-size: 46.87%;
+            }
+
+            header {
+                padding: 2rem 3rem;
+            }
+
+            header nav a img {
+                width: 200px;
+            }
+
+            nav ul {
+                top: 65.18px;
+                height: calc(100vh - 65.18px);
+            }
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .sections {
+            height: auto;
+            display: grid;
+            place-items: center;
+            position: relative;
+            background-color: #cfbaba4d;
+            top: 9.5rem;
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .section2 {
+            background-image: url(./imgs/flowers.png);
+            background-position: top center;
+            background-repeat: repeat-x;
+            z-index: --1;
+        }
+
+        .sections::before {
+            background-image: url('./imgs/main.png');
+            background-size: cover;
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            z-index: -2;
+        }
+
+        .container {
+            max-width: 400px;
+            /* position: sticky; */
+            margin: 9rem auto;
+            z-index: 2;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+    </style>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header>
         <nav>
-            <a href="#home" id="logo"><img src="./imgs/Jainambanquetslogo.png" width="250px" height="59px" alt=""
-                    srcset=""></a>
+            <a href="#" onclick="window.location.reload(true);" id="logo"><img src="./imgs/Jainambanquetslogo.png"
+                    width="250px" height="59px" alt="" srcset=""></a>
             <i class="fas fa-bars" id="ham-menu"></i>
             <ul id="nav-bar">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="home">Home</a>
                 </li>
                 <li>
-                    <a href="menu.html">Menu</a>
+                    <a href="menu">Menu</a>
                 </li>
                 <li>
-                    <a href="#gallery">Gallery</a>
+                    <a href="about">About</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <section class="sections section2">
         <div class="container">
-            <form id="myForm">
+            <form name="submit-to-google-sheet" id="myForm">
+                <!-- <form name="submit-to-google-sheet"
+                action="https://script.google.com/macros/s/AKfycbwGnwDiq5QiAbEyagu94AcGCLx-qaMTMBC8UKcZkTO7DlbeKa6AUNYBKUdC7oK9WREa/exec"
+                id="myForm"> -->
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -75,7 +258,7 @@
                 </div>
 
                 <div class="">
-                    <button class="btno" type="submit">Submit</button>
+                    <button class="btno" type="submit" id="submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -87,8 +270,8 @@
         <div class="details-sec" style="background-color: #CFCFCF;">
             <div class="details-sec1">
                 <h2>Contact Details</h2>
-                <p>You can use a few enticing words and flaunt your capabilities that will attract future clients and
-                    encourage them to hire you right away
+                <p>
+                    Unleash the Splendor of Your Occasion - Connect with Us and Experience Unparalleled Event Excellence!
                 </p>
             </div>
             <div class="details-sec2">
@@ -120,7 +303,9 @@
                             </div>
                         </div>
                         <div style="margin-left: 5rem; padding: 1.5rem ;">
-                            <a class="linkss" href="tel:9324386766">9324386766</a>
+                            <a class="linkss" href="tel:2225964537">+91 2225964537</a><br>
+                            <a class="linkss" href="tel:9322260290">+91 9322260290</a><br>
+                            <a class="linkss" href="tel:8879796490">+91 8879796490</a><br>
                         </div>
                     </div>
                 </div>
@@ -137,8 +322,10 @@
                             </div>
                         </div>
                         <div style="margin-left: 5rem; padding: 1.5rem ;">
-                            <a class="linkss" href="tel:9324386766">Plot No. 100, Lal Bahadur Shastri Road, Near State
-                                Bank of India B.T.M. Compound, Sadan wadi, Bhandup West, Mumbai, Maharashtra 400078</a>
+                            <a class="linkss"
+                                href="https://www.google.com/maps/dir//Plot+No.+100,+Lal+Bahadur+Shastri+Road,+Near+State+Bank+of+India+B.T.M.+Compound,+Sadan+wadi,+Bhandup+West,+Mumbai,+Maharashtra+400078/@19.1537178,72.867077,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3be7b865d43dd805:0xf4fda27ee044e2f7!2m2!1d72.9371175!2d19.1537311?entry=ttu">Lal
+                                Bahadur Shastri Road, Near State
+                                Bank of India B.T.M. Compound, Bhandup West, Mumbai, Maharashtra 400078</a>
                         </div>
                     </div>
                 </div>
@@ -152,7 +339,6 @@
                             </div>
                             <div style="text-align: center; margin-top: 2rem; padding-left: 6px;">
                                 <h3 style="font-weight: bold;">Email Us</h3>
-                                <!-- <div><a href="tel:9324386766">9324386766</a></div> -->
                             </div>
                         </div>
                         <div style="margin-left: 5rem; padding: 1.5rem ;">
@@ -167,8 +353,8 @@
 
     <footer>
         <div class="footer-sec">
-            <span>Copyright © 2023 <a href="www.jainambanquethall.com">jainambanquethall.com</a> | Powered by
-                jainambanquethall</span>
+            <span>Copyright © 2023 <a href="./index.html">jainambanquethall.com</a> | Designed By <a
+                    href="https://www.rahulborhade.me">Rahul Borhade</a></span>
         </div>
     </footer>
 
@@ -179,6 +365,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- Google Sheet -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwGnwDiq5QiAbEyagu94AcGCLx-qaMTMBC8UKcZkTO7DlbeKa6AUNYBKUdC7oK9WREa/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const submitBtn = document.getElementById('submit');
+
+        submitBtn.addEventListener('click', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+                .reset(form)
+        });
+    </script>
 </body>
 
 </html>
