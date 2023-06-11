@@ -24,58 +24,59 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Light Gallery Js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+        integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"
+            style="color: #ffffff; font-size: 2rem; "></i></button>
+    <button onclick="window.location.href='tel:8879796490';" id="callBtn" title="call us"><i class="fa-solid fa-phone"
+            style="color: #ffffff; font-size: 2rem; "></i></button>
     <header>
         <nav>
-            <a href="#home" id="logo"><img src="./imgs/Jainambanquetslogo.png" width="250px" height="59px" alt=""
-                    srcset=""></a>
+            <a href="#" onclick="window.location.reload(true);" id="logo"><img src="./imgs/Jainambanquetslogo.png"
+                    width="250px" height="59px" alt="" srcset=""></a>
             <i class="fas fa-bars" id="ham-menu"></i>
             <ul id="nav-bar">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="home">Home</a>
                 </li>
                 <li>
-                    <a href="menu.html">Menu</a>
+                    <a href="menu">Menu</a>
                 </li>
                 <li>
-                    <a href="#gallery">Gallery</a>
+                    <a href="about">About</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- <section id="home">
-        <h1>Home Section</h1>
-    </section> -->
+
 
     <!-- Carousel Start -->
-    <!-- <iframe width="100%" height="600px" src="https://www.youtube.com/embed/zRQcA4Metew" title="YouTube video player"
-        frameborder="0"
+    <iframe style="margin-top: 9.5rem;" width="100%" height="600px" src="https://www.youtube.com/embed/T74EUOscA0Y"
+        title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen autoplay></iframe> -->
+        allowfullscreen autoplay></iframe>
+
 
     <!-- Carousel End -->
-    <section class="section section2">
+    <section class="sectionss section2">
         <h1>Banquets Doesn't Have to Be Expensive or Complicated! It Should Be </br> Smart & User Friendly</h1>
         <div class="contain">
             <img src="./imgs/Rahul Jainam.png" width="250px" height="250px" alt="">
-            <!-- <iframe width="400px" height="200px" src="https://www.youtube.com/embed/zRQcA4Metew"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen autoplay></iframe> -->
             <div>
                 <h3>Dream your dreams with open eyes and make them come true</h3>
                 <p><b>Jainam Banquet Hall</b> is the perfect choice for hosting special events in <b>Bhandup</b>,
                     Mumbai. Our <b>luxurious and spacious</b> banquet halls, Jainam Classic Hall and Jainam Status Hall,
-                    can accommodate up to 500 and 1000 guests respectively, while our newly renovated Party Hall can
-                    host up to 200 guests for small gatherings.
+                    can accommodate from 500 to 1000 guests, while our newly renovated jainam platinu Hall can
+                    host from 300 to 600 guests for gatherings.
                 </p>
                 <p>Our banquet halls feature high ceilings, separate areas for each important part of your event, and a
                     separate area for wedding ceremonies. The interiors are exquisitely decorated, giving each space a
@@ -97,16 +98,15 @@
                 here hassle-free. <b>Choose Jainam Banquet Hall for your next event and experience luxury and elegance
                     at its finest</b>.
             </p>
-            <div style="margin: auto; text-align: center;">
-                <button type="button" class="btno">Know More</button>
-            </div>
+        </div>
+        <div style="margin: auto; text-align: center; z-index: 10;">
+            <a class="btno" href="./about.html">Know More</a>
         </div>
     </section>
     <div class="container-xxl py-5 section">
         <div class="container">
             <div class="text-center Categories">
                 <h6 class="text-uppercase">Our Categories</h6>
-                <!-- <h2 class="mb-5">Banquet <span class="text-uppercase">Halls</span></h1> -->
                 <h2 class="mb-5">Banquet <span class="">Halls</span></h1>
             </div>
             <div class="row">
@@ -115,9 +115,40 @@
                         style="background-color: rgba(0, 0, 0, 0.15);">
                         <div class="position-relative"
                             style="font-family: 'Courier New', Courier, monospace; font-size: 15px; font-weight: 700;">
-                            <!-- <img class="img-fluid" src="imgs/ambiance.MOV" alt=""> -->
-                            <video class="w-100 h-100" src="./imgs/paintwall.MOV" type="video/MOV" autoplay
-                                muted></video>
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid " src="./imgs/jainamplatinumhall1.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamplatinumhall2.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamplatinumhall3.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamplatinumhall4.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamplatinumhall5.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <small
                                 class="position-absolute start-0 top-100 translate-middle-y  text-white rounded py-1 px-3 ms-4"
                                 style="background-color: #D2B461;">300 Seating/550 Floating</small>
@@ -133,12 +164,6 @@
                                 covers and stylish sofas. Enjoy a seamless dining experience in our dedicated dining
                                 area. Rest assured, our backup generator ensures uninterrupted power supply for a
                                 flawless event.</p>
-                            <!-- <div class="d-flex justify-content-between"> -->
-                            <div style="margin: auto; text-align: center;">
-                                <!-- <a class="btno rounded py-2 px-4" href="">View Detail</a>
-                                <a class="btno rounded py-2 px-4" href="">Book Now</a> -->
-                                <button type="button" class="btno">Know More</button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,9 +172,40 @@
                         style="background-color: rgba(0, 0, 0, 0.15);">
                         <div class="position-relative"
                             style="font-family: 'Courier New', Courier, monospace; font-size: 15px; font-weight: 700;">
-                            <!-- <img class="img-fluid" src="imgs/ambiance.MOV" alt=""> -->
-                            <video class="w-100 h-100" src="./imgs/paintwall.MOV" type="video/MOV" autoplay
-                                muted></video>
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid " src="./imgs/jainamstatushall1.jpg" class="d-block w-100"
+                                            alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamstatushall2.jpg" class="d-block w-100"
+                                            alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamstatushall3.jpg" class="d-block w-100"
+                                            alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamstatushall4.jpg" class="d-block w-100"
+                                            alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamstatushall5.jpg" class="d-block w-100"
+                                            alt="Jainam platinum hall picture">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <small
                                 class="position-absolute start-0 top-100 translate-middle-y  text-white rounded py-1 px-3 ms-4"
                                 style="background-color: #D2B461;">400 Seating/1000 Floating</small>
@@ -165,12 +221,6 @@
                                 chairs with covers and plush sofas. Experience culinary delights in our dedicated dining
                                 space. In case of any power outages, our backup generator guarantees a seamless event.
                             </p>
-                            <!-- <div class="d-flex justify-content-between"> -->
-                            <div style="margin: auto; text-align: center;">
-                                <!-- <a class="btno rounded py-2 px-4" href="">View Detail</a>
-                                <a class="btno rounded py-2 px-4" href="">Book Now</a> -->
-                                <button type="button" class="btno">Know More</button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,8 +230,40 @@
                         <div class="position-relative"
                             style="font-family: 'Courier New', Courier, monospace; font-size: 15px; font-weight: 700;">
                             <!-- <img class="img-fluid" src="imgs/ambiance.MOV" alt=""> -->
-                            <video class="w-100 h-100" src="./imgs/paintwall.MOV" type="video/MOV" autoplay
-                                muted></video>
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid " src="./imgs/jainamclassichall1.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamclassichall2.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamclassichall3.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamclassichall4.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid " src="./imgs/jainamclassichall5.jpg"
+                                            class="d-block w-100" alt="Jainam platinum hall picture">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <small
                                 class="position-absolute start-0 top-100 translate-middle-y  text-white rounded py-1 px-3 ms-4"
                                 style="background-color: #D2B461;">450 Seatings/ 1500 Floating</small>
@@ -197,12 +279,6 @@
                                 ambiance. The package includes comfortable chairs with covers and stylish sofas. Enjoy a
                                 delightful dining experience in our designated dining area. Rest easy knowing that our
                                 backup generator ensures uninterrupted power supply throughout your event.</p>
-                            <!-- <div class="d-flex justify-content-between"> -->
-                            <div style="margin: auto; text-align: center;">
-                                <!-- <a class="btno rounded py-2 px-4" href="">View Detail</a>
-                                <a class="btno rounded py-2 px-4" href="">Book Now</a> -->
-                                <button type="button" class="btno">Know More</button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -210,13 +286,207 @@
         </div>
     </div>
 
+    <!-- Our Gallery -->
+    <section class="section">
+        <div class="text-center Categories">
+            <h6 class="text-uppercase">Let's Explore</h6>
+            <!-- <h2 class="mb-5">Banquet <span class="text-uppercase">Halls</span></h1> -->
+            <h2 class="mb-5"><span class="">Our Gallery</span></h1>
+        </div>
+
+        <div class="galleries" style="padding-bottom: 2rem;">
+            <h4 class="mb-0">Jainam Platinum Hall</h4>
+            <div class="gallery">
+                <a href="./imgs/jainamplatinumhall1.jpg">
+                    <img src="./imgs/jainamplatinumhall1.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamplatinumhall2.jpg">
+                    <img src="./imgs/jainamplatinumhall2.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamplatinumhall3.jpg">
+                    <img src="./imgs/jainamplatinumhall3.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamplatinumhall4.jpg">
+                    <img src="./imgs/jainamplatinumhall4.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamplatinumhall5.jpg">
+                    <img src="./imgs/jainamplatinumhall5.jpg" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <h4 class="mb-0">Jainam Status Hall</h4>
+            <div class="gallery2">
+                <a href="./imgs/jainamstatushall1.jpg">
+                    <img src="./imgs/jainamstatushall1.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamstatushall2.jpg">
+                    <img src="./imgs/jainamstatushall2.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamstatushall3.jpg">
+                    <img src="./imgs/jainamstatushall3.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamstatushall4.jpg">
+                    <img src="./imgs/jainamstatushall4.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamstatushall5.jpg">
+                    <img src="./imgs/jainamstatushall5.jpg" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <h4 class="mb-0">Jainam Classic Hall</h4>
+            <div class="gallery3">
+                <a href="./imgs/jainamclassichall1.jpg">
+                    <img src="./imgs/jainamclassichall1.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamclassichall2.jpg">
+                    <img src="./imgs/jainamclassichall2.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamclassichall3.jpg">
+                    <img src="./imgs/jainamclassichall3.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamclassichall4">
+                    <img src="./imgs/jainamclassichall4.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/jainamclassichall5.jpg">
+                    <img src="./imgs/jainamclassichall5.jpg" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <h4 class="mb-0">Jainam Vidhi Mandap Decorations</h4>
+            <div class="vidhimandap">
+                <a href="./imgs/Vidhi Mandap A.jpg">
+                    <img src="./imgs/Vidhi Mandap A.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Vidhi Mandap B.jpg">
+                    <img src="./imgs/Vidhi Mandap B.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Vidhi Mandap C.jpg">
+                    <img src="./imgs/Vidhi Mandap C.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Vidhi Mandap D.jpg">
+                    <img src="./imgs/Vidhi Mandap D.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Vidhi Mandap E.jpg">
+                    <img src="./imgs/Vidhi Mandap E.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Vidhi Mandap F.jpg">
+                    <img src="./imgs/Vidhi Mandap F.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Vidhi Mandap G.jpg">
+                    <img src="./imgs/Vidhi Mandap G.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Vidhi Mandap H.jpg">
+                    <img src="./imgs/Vidhi Mandap H.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Vidhi Mandap I.jpg">
+                    <img src="./imgs/Vidhi Mandap I.jpg" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <h4 class="mb-0">Jainam Stage Decorations</h4>
+            <div class="stagedecor">
+                <a href="./imgs/Photo No. 1.jpg">
+                    <img src="./imgs/Photo No. 1.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 2.jpg">
+                    <img src="./imgs/Photo No. 2.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 3.jpg">
+                    <img src="./imgs/Photo No. 3.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 4.jpg">
+                    <img src="./imgs/Photo No. 4.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 5.jpg">
+                    <img src="./imgs/Photo No. 5.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 6.jpg">
+                    <img src="./imgs/Photo No. 6.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 7.jpg">
+                    <img src="./imgs/Photo No. 7.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 8.jpg">
+                    <img src="./imgs/Photo No. 8.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 9.jpg">
+                    <img src="./imgs/Photo No. 9.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 10.jpg">
+                    <img src="./imgs/Photo No. 10.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 11.jpg">
+                    <img src="./imgs/Photo No. 11.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 12.jpg">
+                    <img src="./imgs/Photo No. 12.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 13.jpg">
+                    <img src="./imgs/Photo No. 13.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 14.jpg">
+                    <img src="./imgs/Photo No. 14.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 15.jpg">
+                    <img src="./imgs/Photo No. 15.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 16.jpg">
+                    <img src="./imgs/Photo No. 16.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 17.jpg">
+                    <img src="./imgs/Photo No. 17.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 18.jpg">
+                    <img src="./imgs/Photo No. 18.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 19.jpg">
+                    <img src="./imgs/Photo No. 19.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 20.jpg">
+                    <img src="./imgs/Photo No. 20.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 21.jpg">
+                    <img src="./imgs/Photo No. 21.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 22.jpg">
+                    <img src="./imgs/Photo No. 22.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 23.jpg">
+                    <img src="./imgs/Photo No. 23.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 24.jpg">
+                    <img src="./imgs/Photo No. 24.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 25.jpg">
+                    <img src="./imgs/Photo No. 25.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 26.jpg">
+                    <img src="./imgs/Photo No. 25.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 27.jpg">
+                    <img src="./imgs/Photo No. 27.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 28.jpg">
+                    <img src="./imgs/Photo No. 28.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 29.jpg">
+                    <img src="./imgs/Photo No. 29.jpg" class="d-block w-100" alt="...">
+                </a>
+                <a href="./imgs/Photo No. 30.jpg">
+                    <img src="./imgs/Photo No. 30.jpg" class="d-block w-100" alt="...">
+                </a>
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Our Gallery -->
+
     <!-- Contact details -->
-    <section style="margin-top: 9.5rem;">
+    <section>
         <div class="details-sec" style="background-color: #CFCFCF;">
             <div class="details-sec1">
                 <h2>Contact Details</h2>
-                <p>You can use a few enticing words and flaunt your capabilities that will attract future clients and
-                    encourage them to hire you right away
+                <p>
+                    Unleash the Splendor of Your Occasion - Connect with Us and Experience Unparalleled Event
+                    Excellence!
                 </p>
             </div>
             <div class="details-sec2">
@@ -248,14 +518,17 @@
                             </div>
                         </div>
                         <div style="margin-left: 5rem; padding: 1.5rem ;">
-                            <a class="linkss" href="tel:9324386766">9324386766</a>
+                            <a class="linkss" href="tel:2225964537">+91 2225964537</a><br>
+                            <a class="linkss" href="tel:9322260290">+91 9322260290</a><br>
+                            <a class="linkss" href="tel:8879796490">+91 8879796490</a><br>
                         </div>
                     </div>
                 </div>
                 <div style="background-color: #CFCFCF; padding: 2rem 2rem; width: 100%;">
                     <div class="details-secs" style="background-color: #CFCFCF;">
                         <div class="d-flex">
-                            <div style="background-color: #ececec;border-radius: 50%; width: 6rem; height: 6rem;text-align: center;margin-left: 5rem;">
+                            <div
+                                style="background-color: #ececec;border-radius: 50%; width: 6rem; height: 6rem;text-align: center;margin-left: 5rem;">
                                 <i class="fa-solid fa-location-dot"
                                     style="color: #d2b461; font-size: 4rem; padding-top: 7px;"></i>
                             </div>
@@ -264,8 +537,10 @@
                             </div>
                         </div>
                         <div style="margin-left: 5rem; padding: 1.5rem ;">
-                            <a class="linkss" href="tel:9324386766">Plot No. 100, Lal Bahadur Shastri Road, Near State
-                                Bank of India B.T.M. Compound, Sadan wadi, Bhandup West, Mumbai, Maharashtra 400078</a>
+                            <a class="linkss"
+                                href="https://www.google.com/maps/dir//Plot+No.+100,+Lal+Bahadur+Shastri+Road,+Near+State+Bank+of+India+B.T.M.+Compound,+Sadan+wadi,+Bhandup+West,+Mumbai,+Maharashtra+400078/@19.1537178,72.867077,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3be7b865d43dd805:0xf4fda27ee044e2f7!2m2!1d72.9371175!2d19.1537311?entry=ttu">Lal
+                                Bahadur Shastri Road, Near State
+                                Bank of India B.T.M. Compound, Bhandup West, Mumbai, Maharashtra 400078</a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +554,6 @@
                             </div>
                             <div style="text-align: center; margin-top: 2rem; padding-left: 6px;">
                                 <h3 style="font-weight: bold;">Email Us</h3>
-                                <!-- <div><a href="tel:9324386766">9324386766</a></div> -->
                             </div>
                         </div>
                         <div style="margin-left: 5rem; padding: 1.5rem ;">
@@ -294,7 +568,8 @@
 
     <footer>
         <div class="footer-sec">
-            <span>Copyright © 2023 <a href="www.jainambanquethall.com">jainambanquethall.com</a> | Powered by jainambanquethall</span>
+            <span>Copyright © 2023 <a href="./index.html">jainambanquethall.com</a> | Designed By <a
+                    href="https://www.rahulborhade.me">Rahul Borhade</a></span>
         </div>
     </footer>
 
@@ -303,8 +578,18 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <!-- cdnjs Lightgallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.querySelector('.gallery'))
+        lightGallery(document.querySelector('.gallery2'))
+        lightGallery(document.querySelector('.gallery3'))
+        lightGallery(document.querySelector('.vidhimandap'))
+        lightGallery(document.querySelector('.stagedecor'))
+    </script>
 </body>
 
 </html>
